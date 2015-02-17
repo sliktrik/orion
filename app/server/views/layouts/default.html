@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/css/styles.css' />
+</head>
+
+<body>
+    <div class="container">
+        
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Project Orion</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#">Listings</a>
+                        </li>
+                        <li>
+                            <a href="#">Open Homes</a>
+                        </li>
+                        <li>
+                            <a href="/clients">Clients</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="logout">log out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        {% block content %} 
+        
+        {% endblock %}
+        
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src='js/app.min.js'></script>
+</body>
+
+</html>

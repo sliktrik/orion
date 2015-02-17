@@ -1,0 +1,48 @@
+
+<section class="row">
+
+  <h1>register.<br/><br/></h1>
+
+</section>
+
+<section class="row">
+
+  <form name="form" ng-submit="register()" novalidate>
+
+    <p class="error formerror" ng-show="message">{{ message }}</p>
+
+    <div class="form-group">
+
+      <input type="text" name="username" class="form-control" placeholder="User Name" ng-model="user.username" ng-required="true">
+
+      <p class="error validationerror" ng-show="form.username.$invalid && form.username.$touched">Username is required</p>
+
+    </div>
+
+    <div class="form-group">
+
+      <input type="email" name="email" class="form-control" placeholder="Email" ng-model="user.email" ng-required="true">
+
+      <p class="error validationerror" ng-show="form.email.$invalid && form.email.$touched">Must be a valid email</p>
+
+    </div>
+
+    <div class="form-group">
+
+      <input type="password" name="password" class="form-control" placeholder="Password" ng-model="user.password" ng-required="true">
+
+      <p class="error validationerror" ng-show="form.password.$invalid && form.password.$touched">password is required</p>
+
+    </div>
+
+    <div class="form-group">
+
+      <button type="submit" class="btn" ng-disabled="form.$invalid">Register</button>
+
+    </div>
+
+    <p> or if you have an account, you can login <a ng-href="#/login">here</a></p>
+
+  </form>
+
+</div>

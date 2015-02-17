@@ -1,0 +1,14 @@
+<h1>Welcome {{user.username}}</h1>
+
+<p>email:{{user.email}}</p>
+
+<ul>
+  <li>
+    <p><strong>token<strong/>:{{user.token.id}}</p>
+  </li>
+  <li>
+    <p><strong>expiry<strong/>:{{user.token.expiry}}</p>
+  </li>
+</ul>
+
+<div class="btn btn-primary" ng-click="logout()">log out</div>
